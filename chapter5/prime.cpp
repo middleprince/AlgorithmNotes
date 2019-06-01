@@ -66,7 +66,8 @@ void printPrime(int k)
 int printArithProgPrime(int begin)
 {
     bool inPrim = false;
-    int delta, prePrime;
+    int delta = 0; 
+    int prePrime = 0;
     int i = begin;
     while(i < num){
         if(inPrim){
