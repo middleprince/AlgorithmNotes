@@ -31,12 +31,8 @@ int main()
         for(int k=0; k<5; k++){
             printf("%d ", nearMatrix[j][k]); 
         }
-
-
     
-    
-
-    return 0;
+     return 0;
 
 
 }
