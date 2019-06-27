@@ -1,3 +1,4 @@
+// A + B and convert the reulst to N-ary numbers
 #include <cstdio>
 int ans[22] = {0};
 
