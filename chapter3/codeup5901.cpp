@@ -1,3 +1,5 @@
+// 
+// Palindrome string problem
 #include <cstdio>
 #include <cstring>
 #define MAX 256
