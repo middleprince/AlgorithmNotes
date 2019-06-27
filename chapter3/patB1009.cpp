@@ -1,3 +1,4 @@
+// input some words, output this words inversively 
 #include <cstdio>
 #include <cstring>
 #define MAX 80
