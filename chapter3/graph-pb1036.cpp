@@ -1,3 +1,5 @@
+// draw square using char 
+// input : int length; char c
 #include<stdio.h>
 #include <string.h>
 #define MAX 22

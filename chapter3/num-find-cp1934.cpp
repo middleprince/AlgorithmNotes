@@ -1,3 +1,4 @@
+// find the a number in a input sequence whose numbers are identical.
 #include<stdio.h>
 #define MAX 220
 
