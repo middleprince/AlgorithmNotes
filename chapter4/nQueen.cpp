@@ -17,11 +17,13 @@ void queenPermute(int index)
         solution++;
         return;
     }
-    for(int x=1; x<=n; x++){
+    for(int x=1; x<=n; ++x){
+        // hashtable 记录当前行有元素，直接排除了同行同列的情况
         if(hashTable[x] != true){
             bool flag = true; 
 
-            for(int pre=1; pre<index; pre++){
+            for(int pre=1; pre<index; ++pre){
+                // 有两个处于对角线的情况
                 if(abs(pre-index) == abs(p[pre] - x)){
                     flag= false;
                     break;
@@ -30,6 +32,7 @@ void queenPermute(int index)
             //结束当前的继续枚举，回溯到上一层。
             if(flag){ 
                 p[index] = x;
+                // X 列当前的访问tag
                 hashTable[x] = true;
                 queenPermute(index+1);
                 hashTable[x] = false;
