@@ -1,6 +1,8 @@
 #include <cstdio>
 #include <cstring>
 
+// 1. take the iputs digits as char string
+// 2. take them as number, then get every digits.
 int main()
 {
     char astr[16], bstr[16]; 
