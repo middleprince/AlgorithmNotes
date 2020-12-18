@@ -1,11 +1,12 @@
-#include<stdio.h>
+#include <cstdio>
+#include <cstring>
 #define MAXN 100010
 
-
-int school[MAXN] = {0};
+extern int school[MAXN];
 
 int main(void)
 {
+    memset(school, 0, sizeof(school));
     int n, index, score;
     if(scanf("%d", &n) == EOF)
         return -1;
@@ -14,7 +15,7 @@ int main(void)
         school[index] += score;
     }
     
-    int sno, max = -1;
+    int sno = 0, max = -1;
     for(int i=0; i<MAXN; i++){
         if(school[i] >max){
            max = school[i];
