@@ -26,9 +26,8 @@ int main()
                 
                 num_int[j] /= 2; 
             }
-            for(; start<len && !num_int[start]; ) ++start;
-            //if(start<len && num_int[start] == 0) // find the next non-zero start position.
-            //    ++start;
+            // find next non-zero positoin
+            for(; start<len && !num_int[start]; ++start) ;
         } while(start < len);
         
         while(pos--)
