@@ -55,7 +55,7 @@ int qsort(void *ins[], int a, int b,
     swap(ins, a, (a+b)/2);
     int pivot = a;
     int last_min = a;
-    for(int i=1; i<=b; ++i)  
+    for(int i=a+1; i<=b; ++i)  
     {
         if((*cmp)(ins[i], ins[pivot]) < 0) 
             swap(ins, i, ++last_min);
